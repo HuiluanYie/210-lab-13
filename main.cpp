@@ -4,6 +4,7 @@
 #include <array>
 #include <fstream>
 #include <string>
+#include <cmath>
 using namespace std;
 
 struct Student {
@@ -34,9 +35,9 @@ int main() {
             fin >> students[i].ID;
             fin >> students[i].score;
         }
-        cout << "Read " << students.size() <<" student records";
+        cout << "Read " << students.size() <<" student records\n";
         fin.close(); // close the file for input
-        print(students);
+        //print(students); //print out for testing
 
         // perform selection sort and output to file
         sort_by_ID(students);
@@ -52,17 +53,19 @@ int main() {
         cout << "Sorted results written to " << out_file;
 
         //Statistics calculations
-        // find median
         sort_by_score(students);
-
-        int median_index = students.size() / 2;
+        // find min
+        int min_index = 0;
+        // find max
+        int max_index = students.size() - 1;
         // find mean score
         double sum = 0;
         for (Student s:students) {
             sum += s.score;
         }
         double mean = sum / students.size();
-        
+        // find median
+        int median_index = students.size() / 2;
         // find standard deviation of scores
         double sum_sd = 0;
         for (Student s:students) {
@@ -72,15 +75,15 @@ int main() {
         double std = sqrt(sum_sd/(students.size()-1));
 
         //Output summary
-        cout << "--- Summary Statistics ---\n";
-        cout << "Minimum Score: " << students[0].score 
-            << " (Student ID: " << students[0].ID << ")\n";
-        cout << "Maximum Score: " << students[students.size() - 1].score 
-            << " (Student ID: " << students[students.size() - 1].ID << ")\n";
-        cout << "Mean Score: " << mean;
-        cout << "Median Score: " << median;
-Median Score: 80.5 (Student ID: 304367391)
-Standard Deviation: 6.48554"
+        cout << "\n\n--- Summary Statistics ---\n";
+        cout << "Minimum Score: " << students[min_index].score 
+            << " (Student ID: " << students[min_index].ID << ")\n";
+        cout << "Maximum Score: " << students[max_index].score 
+            << " (Student ID: " << students[max_index].ID << ")\n";
+        cout << "Mean Score: " << mean << endl;
+        cout << "Median Score: " << students[median_index].score 
+            << " (Student ID: " << students[median_index].ID << ")\n";
+        cout << "Standard Deviation: " << std << endl;
     }
     else
         cout << "File not found.\n";
