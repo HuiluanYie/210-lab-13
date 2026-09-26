@@ -43,13 +43,11 @@ int main() {
         sort_by_ID(students);
         ofstream fout; 
         fout.open(out_file);
-        fout << "The sorted student data";
         for (Student s : students)
         {
-            fout << "\nstudent ID: " << s.ID << endl;
-            fout << "student score: " << s.score << endl;
+            fout << s.ID << ' ' << s.score << '\n';
         }
-        fin.close(); // close the file for output
+        fout.close(); // close the file for output
         cout << "Sorted results written to " << out_file;
 
         //Statistics calculations
@@ -65,6 +63,7 @@ int main() {
         }
         double mean = sum / students.size();
         // find median
+        print(students);
         int median_index = students.size() / 2;
         // find standard deviation of scores
         double sum_sd = 0;
@@ -72,7 +71,7 @@ int main() {
             double square_diff = pow(s.score - mean, 2);
             sum_sd += square_diff;
         } 
-        double std = sqrt(sum_sd/(students.size()-1));
+        double std = sqrt(sum_sd/(students.size()));
 
         //Output summary
         cout << "\n\n--- Summary Statistics ---\n";

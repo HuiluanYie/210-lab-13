@@ -1,450 +1,150 @@
-The sorted student data
-student ID: 304100851
-student score: 88
-
-student ID: 304103478
-student score: 87
-
-student ID: 304103905
-student score: 83.5
-
-student ID: 304110328
-student score: 89.5
-
-student ID: 304112280
-student score: 81.5
-
-student ID: 304113238
-student score: 75
-
-student ID: 304113396
-student score: 82.5
-
-student ID: 304121319
-student score: 77
-
-student ID: 304121417
-student score: 88.5
-
-student ID: 304129256
-student score: 82
-
-student ID: 304129871
-student score: 82.5
-
-student ID: 304130512
-student score: 63
-
-student ID: 304132098
-student score: 86.5
-
-student ID: 304134993
-student score: 83
-
-student ID: 304136421
-student score: 88.5
-
-student ID: 304144118
-student score: 92.5
-
-student ID: 304144597
-student score: 71.5
-
-student ID: 304145082
-student score: 81.5
-
-student ID: 304147400
-student score: 88
-
-student ID: 304147819
-student score: 84.5
-
-student ID: 304154987
-student score: 81.5
-
-student ID: 304160217
-student score: 82
-
-student ID: 304160589
-student score: 67
-
-student ID: 304170284
-student score: 89.5
-
-student ID: 304171426
-student score: 88
-
-student ID: 304171482
-student score: 85.5
-
-student ID: 304172357
-student score: 77.5
-
-student ID: 304173563
-student score: 82.5
-
-student ID: 304175674
-student score: 81
-
-student ID: 304179131
-student score: 80
-
-student ID: 304179840
-student score: 76.5
-
-student ID: 304183227
-student score: 84.5
-
-student ID: 304183810
-student score: 87.5
-
-student ID: 304183886
-student score: 92.5
-
-student ID: 304186673
-student score: 82
-
-student ID: 304191988
-student score: 88
-
-student ID: 304197080
-student score: 82
-
-student ID: 304199458
-student score: 83
-
-student ID: 304200074
-student score: 74.5
-
-student ID: 304201504
-student score: 77
-
-student ID: 304206175
-student score: 80
-
-student ID: 304207331
-student score: 77
-
-student ID: 304214371
-student score: 82
-
-student ID: 304214621
-student score: 88.5
-
-student ID: 304214662
-student score: 76
-
-student ID: 304218131
-student score: 77.5
-
-student ID: 304223416
-student score: 87
-
-student ID: 304228746
-student score: 76.5
-
-student ID: 304230021
-student score: 84.5
-
-student ID: 304232325
-student score: 81
-
-student ID: 304235093
-student score: 92
-
-student ID: 304238469
-student score: 74
-
-student ID: 304239117
-student score: 73.5
-
-student ID: 304249009
-student score: 80
-
-student ID: 304251856
-student score: 88
-
-student ID: 304252581
-student score: 70
-
-student ID: 304255333
-student score: 75
-
-student ID: 304256155
-student score: 85
-
-student ID: 304261348
-student score: 64.5
-
-student ID: 304266542
-student score: 90.5
-
-student ID: 304269514
-student score: 92.5
-
-student ID: 304270381
-student score: 71
-
-student ID: 304274341
-student score: 85.5
-
-student ID: 304276622
-student score: 78
-
-student ID: 304278104
-student score: 76.5
-
-student ID: 304283748
-student score: 76
-
-student ID: 304284259
-student score: 75.5
-
-student ID: 304289166
-student score: 78.5
-
-student ID: 304289192
-student score: 83
-
-student ID: 304290198
-student score: 71.5
-
-student ID: 304294098
-student score: 76.5
-
-student ID: 304294329
-student score: 79.5
-
-student ID: 304294646
-student score: 82.5
-
-student ID: 304297647
-student score: 75.5
-
-student ID: 304298419
-student score: 79
-
-student ID: 304299943
-student score: 88
-
-student ID: 304300942
-student score: 87.5
-
-student ID: 304302757
-student score: 76.5
-
-student ID: 304307100
-student score: 86.5
-
-student ID: 304307944
-student score: 73
-
-student ID: 304308834
-student score: 90
-
-student ID: 304309287
-student score: 73.5
-
-student ID: 304310322
-student score: 84.5
-
-student ID: 304311226
-student score: 78.5
-
-student ID: 304324957
-student score: 87.5
-
-student ID: 304328080
-student score: 89
-
-student ID: 304328864
-student score: 77.5
-
-student ID: 304330007
-student score: 83.5
-
-student ID: 304331385
-student score: 91.5
-
-student ID: 304340306
-student score: 72
-
-student ID: 304344313
-student score: 83
-
-student ID: 304346438
-student score: 85
-
-student ID: 304347576
-student score: 88
-
-student ID: 304352296
-student score: 71
-
-student ID: 304352772
-student score: 78.5
-
-student ID: 304353354
-student score: 82
-
-student ID: 304355461
-student score: 93.5
-
-student ID: 304355519
-student score: 70
-
-student ID: 304359177
-student score: 83
-
-student ID: 304362296
-student score: 77
-
-student ID: 304367391
-student score: 80.5
-
-student ID: 304367839
-student score: 75
-
-student ID: 304369822
-student score: 80.5
-
-student ID: 304370678
-student score: 89.5
-
-student ID: 304372063
-student score: 83.5
-
-student ID: 304374847
-student score: 90.5
-
-student ID: 304375525
-student score: 69.5
-
-student ID: 304379507
-student score: 86.5
-
-student ID: 304388039
-student score: 76
-
-student ID: 304388259
-student score: 75
-
-student ID: 304395673
-student score: 76.5
-
-student ID: 304398994
-student score: 77
-
-student ID: 304399693
-student score: 69
-
-student ID: 304401934
-student score: 74
-
-student ID: 304406630
-student score: 75.5
-
-student ID: 304407455
-student score: 82.5
-
-student ID: 304407685
-student score: 80
-
-student ID: 304407989
-student score: 80
-
-student ID: 304408981
-student score: 72.5
-
-student ID: 304409880
-student score: 86
-
-student ID: 304412224
-student score: 90.5
-
-student ID: 304412833
-student score: 69
-
-student ID: 304414322
-student score: 69.5
-
-student ID: 304418373
-student score: 87
-
-student ID: 304420635
-student score: 80
-
-student ID: 304421798
-student score: 75
-
-student ID: 304424356
-student score: 79.5
-
-student ID: 304428534
-student score: 87.5
-
-student ID: 304430828
-student score: 75
-
-student ID: 304432271
-student score: 88.5
-
-student ID: 304432591
-student score: 82.5
-
-student ID: 304434179
-student score: 76.5
-
-student ID: 304434760
-student score: 89.5
-
-student ID: 304437388
-student score: 75.5
-
-student ID: 304438890
-student score: 76.5
-
-student ID: 304451173
-student score: 80.5
-
-student ID: 304452565
-student score: 80.5
-
-student ID: 304452923
-student score: 89
-
-student ID: 304453269
-student score: 76
-
-student ID: 304454948
-student score: 75.5
-
-student ID: 304455296
-student score: 82.5
-
-student ID: 304455444
-student score: 77
-
-student ID: 304458082
-student score: 84
-
-student ID: 304462493
-student score: 68.5
-
-student ID: 304471066
-student score: 78.5
-
-student ID: 304472845
-student score: 71
-
-student ID: 304475880
-student score: 73
-
-student ID: 304476569
-student score: 78
-
-student ID: 304486163
-student score: 73.5
-
-student ID: 304486752
-student score: 79.5
+304100851 88
+304103478 87
+304103905 83.5
+304110328 89.5
+304112280 81.5
+304113238 75
+304113396 82.5
+304121319 77
+304121417 88.5
+304129256 82
+304129871 82.5
+304130512 63
+304132098 86.5
+304134993 83
+304136421 88.5
+304144118 92.5
+304144597 71.5
+304145082 81.5
+304147400 88
+304147819 84.5
+304154987 81.5
+304160217 82
+304160589 67
+304170284 89.5
+304171426 88
+304171482 85.5
+304172357 77.5
+304173563 82.5
+304175674 81
+304179131 80
+304179840 76.5
+304183227 84.5
+304183810 87.5
+304183886 92.5
+304186673 82
+304191988 88
+304197080 82
+304199458 83
+304200074 74.5
+304201504 77
+304206175 80
+304207331 77
+304214371 82
+304214621 88.5
+304214662 76
+304218131 77.5
+304223416 87
+304228746 76.5
+304230021 84.5
+304232325 81
+304235093 92
+304238469 74
+304239117 73.5
+304249009 80
+304251856 88
+304252581 70
+304255333 75
+304256155 85
+304261348 64.5
+304266542 90.5
+304269514 92.5
+304270381 71
+304274341 85.5
+304276622 78
+304278104 76.5
+304283748 76
+304284259 75.5
+304289166 78.5
+304289192 83
+304290198 71.5
+304294098 76.5
+304294329 79.5
+304294646 82.5
+304297647 75.5
+304298419 79
+304299943 88
+304300942 87.5
+304302757 76.5
+304307100 86.5
+304307944 73
+304308834 90
+304309287 73.5
+304310322 84.5
+304311226 78.5
+304324957 87.5
+304328080 89
+304328864 77.5
+304330007 83.5
+304331385 91.5
+304340306 72
+304344313 83
+304346438 85
+304347576 88
+304352296 71
+304352772 78.5
+304353354 82
+304355461 93.5
+304355519 70
+304359177 83
+304362296 77
+304367391 80.5
+304367839 75
+304369822 80.5
+304370678 89.5
+304372063 83.5
+304374847 90.5
+304375525 69.5
+304379507 86.5
+304388039 76
+304388259 75
+304395673 76.5
+304398994 77
+304399693 69
+304401934 74
+304406630 75.5
+304407455 82.5
+304407685 80
+304407989 80
+304408981 72.5
+304409880 86
+304412224 90.5
+304412833 69
+304414322 69.5
+304418373 87
+304420635 80
+304421798 75
+304424356 79.5
+304428534 87.5
+304430828 75
+304432271 88.5
+304432591 82.5
+304434179 76.5
+304434760 89.5
+304437388 75.5
+304438890 76.5
+304451173 80.5
+304452565 80.5
+304452923 89
+304453269 76
+304454948 75.5
+304455296 82.5
+304455444 77
+304458082 84
+304462493 68.5
+304471066 78.5
+304472845 71
+304475880 73
+304476569 78
+304486163 73.5
+304486752 79.5
