@@ -9,13 +9,13 @@ using namespace std;
 struct Student {
     // the Student struct contain the student ID and exam score
     long ID;
-    int score;
+    double score;
 };
 
 const int NUM = 150;
 
 //Function prototype
-void print(array < Student, NUM >);
+void print(const array < Student, NUM >&);
 
 int main() {
     // declarations
@@ -37,6 +37,8 @@ int main() {
 
         print(students);
 
+
+
     }
     else
         cout << "File not found.\n";
@@ -46,13 +48,21 @@ int main() {
 }
 
 //Function definition
-void print(array < Student, NUM > students) {
+void print(const array < Student, NUM >& students) {
     // print() outputs the student data in the array
     // arguments: an array of Student
     // returns: none
     for (Student s : students)
     {
-        cout << "student ID: " << s.ID << " ";
+        cout << "\nstudent ID: " << s.ID << endl;
         cout << "student score: " << s.score << endl;
     }
+}
+
+void selection_sort(array < Student, NUM >& students) {
+    for (int i = 0; i < students.size() - 1; i++) {
+        // Find index of smallest remaining element
+        int index_smallest = i;
+        for (int j = i + 1; j < students.size(); j++) {
+        }
 }
