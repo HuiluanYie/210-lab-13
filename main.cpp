@@ -16,6 +16,7 @@ const int NUM = 150;
 
 //Function prototype
 void print(const array < Student, NUM >&);
+void selection_sort(array < Student, NUM >&);
 
 int main() {
     // declarations
@@ -49,17 +50,29 @@ int main() {
         fin.close(); // close the file for output
         cout << "Sorted results written to " << out_file;
 
+        //Statistics calculations
+        // Minimum score and associated student ID
+        int min_index = 0;
+        for (int i = 0; i < students.size(); i++) {
+            if (students[i].score < students[min_index].score) {
+                min_index = i;
+            }
+        }
+        // Maximum score and associated student ID
+        // Mean score
+        // Median score and associated student ID
+        // Standard deviation of scores
+        cout << "--- Summary Statistics ---\n";
     }
     else
         cout << "File not found.\n";
-
 
     return 0;
 }
 
 //Function definition
 void print(const array < Student, NUM >& students) {
-    // print() outputs the student data in the array
+    // print() outputs the student data in the array (for testing)
     // arguments: an array of Student
     // returns: none
     for (Student s : students)
