@@ -88,7 +88,7 @@ int main() {
         for (Student s:students) {
             double square_diff = pow(s.score - mean, 2);
             sum_sd += square_diff;
-        }
+        } 
         
 
         cout << "--- Summary Statistics ---\n";
