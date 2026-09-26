@@ -16,7 +16,8 @@ const int NUM = 150;
 
 //Function prototype
 void print(const array < Student, NUM >&);
-void selection_sort(array < Student, NUM >&);
+void sort_by_ID(array < Student, NUM >&);
+void sort_by_score(array < Student, NUM >&);
 
 int main() {
     // declarations
@@ -38,7 +39,7 @@ int main() {
         print(students);
 
         // perform selection sort and output to file
-        selection_sort(students);
+        sort_by_ID(students);
         ofstream fout; 
         fout.open(out_file);
         fout << "The sorted student data";
@@ -51,16 +52,29 @@ int main() {
         cout << "Sorted results written to " << out_file;
 
         //Statistics calculations
-        // Minimum score and associated student ID
+        // find minimum score
         int min_index = 0;
         for (int i = 0; i < students.size(); i++) {
             if (students[i].score < students[min_index].score) {
                 min_index = i;
             }
         }
-        // Maximum score and associated student ID
-        // Mean score
+        // find maximum score
+        int max_index = 0;
+        for (int i = 0; i < students.size(); i++) {
+            if (students[i].score > students[max_index].score) {
+                max_index = i;
+            }
+        }
+        // find mean score
+        double sum = 0;
+        for (int i = 0; i < students.size(); i++) {
+            sum += students[i].score;
+        }
+        double mean = sum / students.size();
         // Median score and associated student ID
+        sort_by_score(students);
+        double median = students[students.size() / 2].score;
         // Standard deviation of scores
         cout << "--- Summary Statistics ---\n";
     }
@@ -82,8 +96,8 @@ void print(const array < Student, NUM >& students) {
     }
 }
 
-void selection_sort(array < Student, NUM >& students) {
-    // selection_sort() sort the student data by student ID
+void sort_by_ID(array < Student, NUM >& students) {
+    // sort_by_ID() sort the student data by student ID using selection sort 
     // arguments: an array of Student
     // returns: none
     for (int i = 0; i < students.size() - 1; i++) {
@@ -91,6 +105,26 @@ void selection_sort(array < Student, NUM >& students) {
         int index_smallest = i;
         for (int j = i + 1; j < students.size(); j++) {
             if (students[j].ID < students[index_smallest].ID) {
+                index_smallest = j;
+            }
+        }
+     
+        // Swap students[i] and students[index_smallest]
+        Student temp = students[i];
+        students[i] = students[index_smallest];
+        students[index_smallest] = temp;
+   }
+}
+
+void sort_by_score(array < Student, NUM >& students) {
+    // sort_by_score() sort the student data by student score using selection sort 
+    // arguments: an array of Student
+    // returns: none
+    for (int i = 0; i < students.size() - 1; i++) {
+        // Find index of smallest remaining element
+        int index_smallest = i;
+        for (int j = i + 1; j < students.size(); j++) {
+            if (students[j].score < students[index_smallest].score) {
                 index_smallest = j;
             }
         }
