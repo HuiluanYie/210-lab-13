@@ -68,14 +68,29 @@ int main() {
         }
         // find mean score
         double sum = 0;
-        for (int i = 0; i < students.size(); i++) {
-            sum += students[i].score;
+        for (Student s:students) {
+            sum += s.score;
         }
         double mean = sum / students.size();
         // Median score and associated student ID
         sort_by_score(students);
-        double median = students[students.size() / 2].score;
+        double median;
+        if (students.size() % 2 == 1)
+        {
+            median = students[students.size() / 2].score;
+        }
+        else
+        {
+            median = (students[students.size() / 2].score + students[students.size() / 2 + 1].score) / 2;
+        }
         // Standard deviation of scores
+        double sum_sd = 0;
+        for (Student s:students) {
+            double square_diff = pow(s.score - mean, 2);
+            sum_sd += square_diff;
+        }
+        
+
         cout << "--- Summary Statistics ---\n";
     }
     else
