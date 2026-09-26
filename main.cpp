@@ -63,7 +63,6 @@ int main() {
         }
         double mean = sum / students.size();
         // find median
-        print(students);
         int median_index = students.size() / 2;
         // find standard deviation of scores
         double sum_sd = 0;
