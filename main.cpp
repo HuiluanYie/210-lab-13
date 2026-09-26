@@ -52,46 +52,35 @@ int main() {
         cout << "Sorted results written to " << out_file;
 
         //Statistics calculations
-        // find minimum score
-        int min_index = 0;
-        for (int i = 0; i < students.size(); i++) {
-            if (students[i].score < students[min_index].score) {
-                min_index = i;
-            }
-        }
-        // find maximum score
-        int max_index = 0;
-        for (int i = 0; i < students.size(); i++) {
-            if (students[i].score > students[max_index].score) {
-                max_index = i;
-            }
-        }
+        // find median
+        sort_by_score(students);
+
+        int median_index = students.size() / 2;
         // find mean score
         double sum = 0;
         for (Student s:students) {
             sum += s.score;
         }
         double mean = sum / students.size();
-        // Median score and associated student ID
-        sort_by_score(students);
-        double median;
-        if (students.size() % 2 == 1)
-        {
-            median = students[students.size() / 2].score;
-        }
-        else
-        {
-            median = (students[students.size() / 2].score + students[students.size() / 2 + 1].score) / 2;
-        }
-        // Standard deviation of scores
+        
+        // find standard deviation of scores
         double sum_sd = 0;
         for (Student s:students) {
             double square_diff = pow(s.score - mean, 2);
             sum_sd += square_diff;
         } 
-        
+        double std = sqrt(sum_sd/(students.size()-1));
 
+        //Output summary
         cout << "--- Summary Statistics ---\n";
+        cout << "Minimum Score: " << students[0].score 
+            << " (Student ID: " << students[0].ID << ")\n";
+        cout << "Maximum Score: " << students[students.size() - 1].score 
+            << " (Student ID: " << students[students.size() - 1].ID << ")\n";
+        cout << "Mean Score: " << mean;
+        cout << "Median Score: " << median;
+Median Score: 80.5 (Student ID: 304367391)
+Standard Deviation: 6.48554"
     }
     else
         cout << "File not found.\n";
