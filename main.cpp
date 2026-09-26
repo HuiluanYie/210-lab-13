@@ -33,11 +33,21 @@ int main() {
             fin >> students[i].score;
         }
         cout << "Read " << students.size() <<" student records";
-        fin.close(); // close the file
-
+        fin.close(); // close the file for input
         print(students);
 
-
+        // perform selection sort and output to file
+        selection_sort(students);
+        ofstream fout; 
+        fout.open(out_file);
+        fout << "The sorted student data";
+        for (Student s : students)
+        {
+            fout << "\nstudent ID: " << s.ID << endl;
+            fout << "student score: " << s.score << endl;
+        }
+        fin.close(); // close the file for output
+        cout << "Sorted results written to " << out_file;
 
     }
     else
@@ -60,9 +70,21 @@ void print(const array < Student, NUM >& students) {
 }
 
 void selection_sort(array < Student, NUM >& students) {
+    // selection_sort() sort the student data by student ID
+    // arguments: an array of Student
+    // returns: none
     for (int i = 0; i < students.size() - 1; i++) {
         // Find index of smallest remaining element
         int index_smallest = i;
         for (int j = i + 1; j < students.size(); j++) {
+            if (students[j].ID < students[index_smallest].ID) {
+                index_smallest = j;
+            }
         }
+     
+        // Swap students[i] and students[index_smallest]
+        Student temp = students[i];
+        students[i] = students[index_smallest];
+        students[index_smallest] = temp;
+   }
 }
